@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheet/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="metaverso.html"><img src="../public/images/corousel/image1.jpg" alt="Image 1"></a>
+            </div>
+            <div class="carousel-item">
+               <a href="robotica.html"> <img src="../public/images/corousel/image2.webp" alt="Image 2"></a>
+            </div>
+            <div class="carousel-item">
+               <a href="analisis de datos.html"> <img src="../public/images/corousel/image2.jpg" alt="Image 3"></a>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <h2>Análisis de datos</h2>
+        <p>El análisis de datos es el proceso de recopilar, procesar y analizar grandes conjuntos de datos 
+            para descubrir patrones y tendencias útiles. Los analistas de datos utilizan una variedad de 
+            herramientas y técnicas para transformar datos en información valiosa que puede ayudar a las 
+            empresas a tomar decisiones informadas.
+        </p>
+    
+    </section>
+    <section>
+        
+    <h1>Código más demandado en la actualidad</h1> <p>El código más demandado en la actualidad incluye:</p> 
+    <ul id='codigos'>
+        <li id='javascript'>JavaScript</li> 
+        <li id='python'>Python</li> 
+        <li id='java'>Java</li> 
+        <li id='c'>C++</li> 
+        <li id='c1'>C#</li> 
+    </ul>
+
+    <style type='text/css'>
+        #javascript {color: red;}
+        #python {color: blue;}
+        #java {color: green;}
+        #c {color: yellow;}
+        #c1 {color: purple;}
+    </style>
+
+
+    <h1>Bases de datos</h1> <p>Las bases de datos son una parte fundamental de la tecnología de la información.
+         Algunos tipos de bases de datos incluyen:</p> <ul> <li>Bases de datos relacionales</li> <li>Bases de 
+            datos NoSQL</li> <li>Bases de datos en memoria</li> <li>Bases de datos gráficas</li> </ul>
+    
+    <h1>Inteligencia artificial</h1> 
+    <p>La inteligencia artificial es un campo emocionante que está experimentando un gran crecimiento. 
+        Algunas áreas clave de la inteligencia artificial incluyen:</p>
+         <ul> 
+            <li>Aprendizaje automático(machine learning)</li> 
+            <li>Redes neuronales artificiales (ANN)</li> 
+            <li>Procesamiento del lenguaje natural (NLP)</li> 
+            <li>Visión por computadora (CV)</li> 
+        </ul>
+    
+    
+    </section>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        setInterval(() => {
+            slides[slideIndex].classList.remove('active');
+            slideIndex = (slideIndex + 1) % slides.length;
+            slides[slideIndex].classList.add('active');
+        }, 3000);
+    </script>
+</body>
+</html>
